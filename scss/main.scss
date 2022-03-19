@@ -1,0 +1,232 @@
+@import "_variables";
+@import "_generalStyle";
+@import "_loader";
+
+@media (min-width: 375px) {
+.block-header{
+    background-color: rgba(128, 128, 128, 0.11);
+    padding-bottom: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+
+        text-align: center;
+        padding-top: 35px;
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    p{
+        
+        text-align: center;
+        padding-top: 20px;
+        font-size: 23px;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.897);
+    }
+
+
+    a{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 295px;
+        height: 65px;
+        text-decoration: none;
+        color: #fff;
+        background-image: linear-gradient(to top, $Primaire-color, $Secondaire-color 100%);
+        border: 1px solid $Secondaire-color;
+        box-shadow: 0px 5px 10px 1px  rgba(128, 128, 128, 0.425);
+        border-radius: 40px;
+        margin-top: 40px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20px;
+
+    h2{
+        font-weight: 800;
+        font-size: 35px;
+    }
+
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        width: 340px;
+        height: 100px;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        box-shadow: 7px 10px 10px  rgba(128, 128, 128, 0.178);
+        background-color: rgba(128, 128, 128, 0.062);
+        margin-top: 25px;
+
+        &:hover{
+            background-color: #9256dc28;
+            cursor: pointer;
+        }
+
+       
+        
+
+        
+
+        li{
+            padding-right: 30px;
+
+            span{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid $Primaire-color;
+                border-radius: 50%;
+                background-color: $Primaire-color;
+                margin-left: -10px;
+                color: #fff;
+                text-align: center;
+                padding-top: 5px;
+                font-weight: 600;    
+            }
+
+            .color{
+                    font-size: 20px;
+                &:hover{
+                    color: $Primaire-color;
+                }
+            }
+
+            h3{
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.colore{
+    background-color: rgba(128, 128, 128, 0.096);
+    width: 100%;
+    padding-bottom: 20px;
+}    
+ .restaurants{
+    
+    margin-top: 80px;
+    padding-top: 10px;
+    margin-left: 20px;
+    
+
+    h3{
+    
+    font-size: 35px;
+    font-weight: 800;
+    padding: 40px 20px 4px 0px;
+    
+    }
+
+    .resto{
+        margin-top: 20px;
+       
+
+    .img-nouveau{
+        position: relative;
+
+
+        p{  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2b7c30;
+            font-weight: 700;
+            font-size: 17px;
+            position: absolute;
+            width: 100px;
+            height: 40px;
+            border: 1px solid rgba(0, 128, 0, 0.39);
+            background-color: #99e2d0;
+            top: 15px;
+            left: 222px;
+        }
+    }
+
+    img{
+
+        width: 95%;
+        height: 220px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+        
+    .img-height{
+        width: 95%;
+        height: 220px;
+        object-position: 0% 63%;
+        }
+    
+
+    .description-resto{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #fff;
+        width: 95%;
+        height: 80px;
+        padding: 10px 30px 0px 10px;
+
+        
+        
+        
+
+        .title-resto{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;            
+        }
+
+        p{  
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        h4{ 
+            margin-top: -5px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .fa-heart{
+            background-color: white; 
+            
+        }
+
+    }
+
+}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
