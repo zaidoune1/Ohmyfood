@@ -200,3 +200,249 @@
       
 
 }
+
+@media (min-width: 1280px) {
+  header{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .fa-arrow-left{
+        
+              position: absolute;
+              left:0.5rem;
+              height: 2rem;
+              width: 2rem;
+              top: 50%;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              transform: translateY(-50%);
+              font-size: 1.2rem;
+              color: black;
+        
+    
+    }
+
+    .title-logo{
+        margin-right: 35px;
+        width: 100%;
+
+    }
+    
+    img{
+        display: flex;
+        width: 190px;
+        text-align: center;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+}
+
+  
+  .Image-restaurant {
+    max-width: 100%;
+    max-height: 32rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .menu {
+    max-width: 90%;
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+  
+    &__header {
+      padding: 1rem 2rem 2rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    &__title {
+      font-family: "Shrikhand", "cursive";
+    }
+
+  }
+  
+  .sectionmenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+  }
+  
+  .blocmenusection {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+  
+    &__title {
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: normal;
+  
+      &::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: $Tertiaire-color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  
+  .menubloc {
+    background-color: white;
+    padding: 1rem;
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    animation: itemAppear .6s;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+    max-width: 100%;
+  
+    &__header {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex: 1;
+    }
+  
+    &__title {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    &__description {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  
+    &__price {
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      padding-left: 0.5rem;
+    }
+  
+    &__confirmation {
+      background-color: $Tertiaire-color;
+      margin: -1rem -5rem -1rem 1rem;
+      width: 4rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition-duration: 0.5s;
+    }
+  
+    &:hover &__confirmation {
+      margin-right: -1rem;
+    }
+  
+    &__wrapIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 100px;
+      transform: rotate(180deg);
+      transition-duration: 0.5s;
+  
+    }
+  
+    &:hover &__wrapIcon {
+      transform: rotate(0);
+    }
+  
+    &__icon {
+      color: $Tertiaire-color;
+    }
+  }
+  
+  @for $i from 0 to 9 {
+    .delay-#{$i} {
+      animation-delay:  #{$i/10}s;
+    }
+  }
+  
+  .commander {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+  
+  }
+  .Btn_commander {
+    @include button(primary);
+    cursor: pointer;
+  }
+  footer{
+        
+    background-color: rgba(0, 0, 0, 0.774);
+    
+   
+  
+    .block-footer{
+        margin-left: 6%;
+        margin-right: 6%;
+  
+    h3{ 
+        font-family: Shrikhand;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: normal;
+    }
+  
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px;
+        li{
+            margin-top: 10px;
+            list-style: none;
+  
+            .fa-utensils, .fa-hands-helping{
+                padding-right: 10px;
+                color: #fff;
+                
+            }
+  
+            
+            a{  
+                text-decoration: none;
+                cursor: pointer;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+            }
+       }
+    }
+  
+  }
+  
+  }
+}
