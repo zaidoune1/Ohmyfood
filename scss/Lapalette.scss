@@ -16,7 +16,7 @@
                   left:0.5rem;
                   height: 2rem;
                   width: 2rem;
-                  top: 50%;
+                  top: 55%;
                   display:flex;
                   align-items:center;
                   justify-content:center;
@@ -28,9 +28,7 @@
         }
 
         .title-logo{
-            margin-right: 35px;
             width: 100%;
-
         }
         
         img{
@@ -185,14 +183,14 @@
         }
       }
       
-      .commander {
+      .order {
         display: flex;
         text-decoration: none;
         justify-content: center;
         padding: 3rem 0;
       
       }
-      .Btn_commander {
+      .Btn_order {
         @include button(primary);
         cursor: pointer;
       }
@@ -387,14 +385,14 @@
     }
   }
   
-  .commander {
+  .order {
     display: flex;
     text-decoration: none;
     justify-content: center;
     padding: 3rem 0;
   
   }
-  .Btn_commander {
+  .Btn_order {
     @include button(primary);
     cursor: pointer;
   }

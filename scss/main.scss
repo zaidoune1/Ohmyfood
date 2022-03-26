@@ -118,7 +118,7 @@ nav{
     }
 }
 
-.colore{
+.restaurant-lists{
     background-color: rgba(128, 128, 128, 0.096);
     width: 100%;
     padding-bottom: 20px;
@@ -230,7 +230,7 @@ nav{
         margin-top: 50px;
         margin-left: 5%;
 
-        .choix{
+        .choice{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -300,10 +300,10 @@ nav{
         }
     }
     
-    .colore{
+    .restaurant-lists{
         background-color: rgba(128, 128, 128, 0.096);
         width: 100%;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }    
      .restaurants{
         
@@ -311,7 +311,7 @@ nav{
         padding-top: 10px;
         margin-left: 5%;
 
-        .choix-resto{
+        .choice-resto{
             display: grid;
             grid-template-columns: 1fr 1fr ;
             gap: 10px 2em;
@@ -413,6 +413,7 @@ nav{
     
     }
     }
+    
 
     footer{
         
@@ -468,24 +469,28 @@ nav{
 
 
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width:1280px) {
    
     
     nav{
         display: flex;
         flex-direction: column;
         margin-top: 50px;
-        margin-left: 5%;
+        margin-left: 0%;
 
-        .choix{
+        .choice{
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             margin-right: 0%;
             margin-top: 15px;
         }
     
         h2{
-           
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-weight: 800;
             font-size: 35px;
         }
@@ -547,7 +552,7 @@ nav{
         }
     }
     
-    .colore{
+    .restaurant-lists{
         background-color: rgba(128, 128, 128, 0.096);
         width: 100%;
         padding-bottom: 20px;
@@ -559,7 +564,7 @@ nav{
         margin-left: 5%;
         margin-right: 5%;
 
-        .choix-resto{
+        .choice-resto{
             display: grid;
             grid-template-columns: 1fr 1fr ;
             gap: 10px 2em;
