@@ -3,15 +3,21 @@
 @import "_loader";
 
 @media (min-width: 375px) {
+
+%main-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .block-header{
+
     background-color: rgba(128, 128, 128, 0.11);
     padding-bottom: 70px;
     width: 100%;
-    display: flex;
+    @extend %main-flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    
     h1{
 
         text-align: center;
@@ -31,10 +37,8 @@
 
 
     a{
-        display: flex;
+        @extend %main-flex;
         text-align: center;
-        align-items: center;
-        justify-content: center;
         width: 295px;
         height: 65px;
         text-decoration: none;
@@ -150,9 +154,7 @@ nav{
 
 
         p{  
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %main-flex;
             color: #2b7c30;
             font-weight: 700;
             font-size: 17px;
@@ -341,9 +343,7 @@ nav{
     
     
             p{  
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                
                 color: #2b7c30;
                 font-weight: 700;
                 font-size: 17px;
@@ -472,7 +472,11 @@ nav{
 
 
 @media screen and (min-width: 700px) and (max-width:992px) {
-   
+   %box-flex{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
     
     nav{
         display: flex;
@@ -481,28 +485,22 @@ nav{
         margin-left: 0%;
 
         .choice{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %box-flex;
             flex-wrap: wrap;
             margin-right: 0%;
             margin-top: 15px;
         }
     
         h2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %box-flex;
             font-weight: 800;
             font-size: 35px;
         }
     
     
         ul{
-            display: flex;
+            @extend %box-flex;
             list-style: none;
-            justify-content: start;
-            align-items: center;
             text-align: center;
             width: 400px;
             height: 100px;
@@ -599,9 +597,7 @@ nav{
     
     
             p{  
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @extend %box-flex;
                 color: #2b7c30;
                 font-weight: 700;
                 font-size: 17px;
@@ -682,9 +678,7 @@ nav{
             margin-right: 5%;
       
         h3{ 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @extend %box-flex;
             font-family: Shrikhand;
             padding-top: 20px;
             padding-bottom: 10px;
