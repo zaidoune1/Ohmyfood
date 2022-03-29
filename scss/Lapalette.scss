@@ -1,30 +1,27 @@
 @import "_variables";
 @import "_generalStyle";
 @import "_animations";
+@import "_mixin";
 
 @media (min-width: 375px) {
-    header{
-
+  header{
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-
-        .fa-arrow-left{
+        .fa-arrow-left{  
+          position: absolute;
+          left:0.5rem;
+          height: 2rem;
+          width: 2rem;
+          top: 55%;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          transform: translateY(-50%);
+          font-size: 1.2rem;
+           color: black;
             
-                  position: absolute;
-                  left:0.5rem;
-                  height: 2rem;
-                  width: 2rem;
-                  top: 55%;
-                  display:flex;
-                  align-items:center;
-                  justify-content:center;
-                  transform: translateY(-50%);
-                  font-size: 1.2rem;
-                  color: black;
-            
-        
         }
 
         .title-logo{
@@ -41,8 +38,7 @@
             
         }
     }
-   
-      
+
       .Image-restaurant {
         max-width: 100%;
         max-height: 32rem;
@@ -52,7 +48,7 @@
       .menu {
         margin-top: -4rem;
         border-radius: 2rem 2rem 0 0;
-        background-color: #f6f6f6;
+        background-color: $background-color;
         z-index: 1;
         position: relative;
       
@@ -98,7 +94,7 @@
       }
       
       .menubloc {
-        background-color: white;
+        background-color: #fff;
         padding: 1rem;
         display: flex;
         border-radius: 0.75rem;
@@ -158,7 +154,7 @@
         &__wrapIcon {
           height: 1.6rem;
           width: 1.6rem;
-          background-color: white;
+          background-color: #fff;
           display:flex;
           align-items:center;
           justify-content:center;
@@ -191,38 +187,32 @@
       
       }
       .Btn_order {
-        @include button(primary);
-        cursor: pointer;
+        @include button();
       }
-
-      
 
 }
 
 @media (min-width: 1280px) {
  
   header{
-
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 
-    .fa-arrow-left{
+    .fa-arrow-left{    
+      position: absolute;
+      left:0.5rem;
+      height: 2rem;
+      width: 2rem;
+      top: 50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+       color: black;
         
-              position: absolute;
-              left:0.5rem;
-              height: 2rem;
-              width: 2rem;
-              top: 50%;
-              display:flex;
-              align-items:center;
-              justify-content:center;
-              transform: translateY(-50%);
-              font-size: 1.2rem;
-              color: black;
-        
-    
     }
 
     .title-logo{
@@ -230,19 +220,16 @@
         width: 100%;
 
     }
-    
+
     img{
         display: flex;
         width: 190px;
         text-align: center;
         margin: auto;
         padding-top: 20px;
-        padding-bottom: 10px;
-        
+        padding-bottom: 10px;  
     }
-}
-
-  
+} 
   .Image-restaurant {
     max-width: 100%;
     max-height: 32rem;
@@ -253,7 +240,7 @@
     max-width: 90%;
     margin-top: -4rem;
     border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
+    background-color: $background-color;
     z-index: 1;
     position: relative;
   
@@ -300,7 +287,7 @@
   }
   
   .menubloc {
-    background-color: white;
+    background-color: #fff;
     padding: 1rem;
     display: flex;
     border-radius: 0.75rem;
@@ -360,7 +347,7 @@
     &__wrapIcon {
       height: 1.6rem;
       width: 1.6rem;
-      background-color: white;
+      background-color: #fff;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -393,19 +380,13 @@
   
   }
   .Btn_order {
-    @include button(primary);
-    cursor: pointer;
+    @include button();
   }
   footer{
-        
     background-color: rgba(0, 0, 0, 0.774);
-    
-   
-  
     .block-footer{
         margin-left: 6%;
         margin-right: 6%;
-  
     h3{ 
         font-family: Shrikhand;
         padding-top: 20px;
