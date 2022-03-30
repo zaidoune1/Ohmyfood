@@ -104,5 +104,5 @@ survol sur desktop au lieu du clic.
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : 
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : https://zaidoune1.github.io/Ohmyfood/
  
