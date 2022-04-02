@@ -38,26 +38,11 @@
 
 
     a{
+        @include button;
+        padding: 1.68rem 3.3rem;
         @extend %main-flex;
-        text-align: center;
-        width: 295px;
-        height: 65px;
-        text-decoration: none;
-        color: #fff;
-        background-image: linear-gradient(to top, $Primaire-color, $Secondaire-color 100%);
-        border: 1px solid $Secondaire-color;
-        box-shadow: 0px 5px 10px 1px  rgba(128, 128, 128, 0.425);
-        border-radius: 40px;
         margin-top: 40px;
-        font-size: 20px;
-        font-weight: 500;
-        transition: 0.5s ease;
-        &:hover{
-            cursor: pointer;
-            transform: scale(1.1);   
-        }
-
-    }
+     }
 
 }
 

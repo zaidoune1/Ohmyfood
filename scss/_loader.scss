@@ -7,7 +7,7 @@
     position: absolute;
     display: flex;
     @include size(100%);
-    animation: loading 5s ease-in-out;
+    animation: loading 3s ease-in-out;
     animation-delay: 0s;
     animation-fill-mode: both;
 }
@@ -22,12 +22,12 @@
 }
 .loader div {
     position: absolute;
-    top: 50vh;
+    top: 45vh;
     border-radius: 50%;
     @include size(100px);
     border: $border;
     border-top-color: $Primaire-color;
-    animation: loader 1.5s linear infinite;
+    animation: loader 2.5s linear forwards;
 }
 .loader div:nth-child(2){ 
     border: $border;
