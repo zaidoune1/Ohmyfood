@@ -1,6 +1,7 @@
 @import "_variables";
 @import "_generalStyle";
 @import "_loader";
+@import "_mixin";
 
 @media (min-width: 375px) {
 
@@ -99,8 +100,7 @@ nav{
 
             span{
                 display: inline-block;
-                width: 30px;
-                height: 30px;
+                @include size(30px);
                 border: 1px solid $Primaire-color;
                 border-radius: 50%;
                 background-color: $Primaire-color;

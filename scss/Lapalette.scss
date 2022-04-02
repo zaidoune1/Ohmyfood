@@ -12,8 +12,7 @@
         .fa-arrow-left{  
           position: absolute;
           left:0.5rem;
-          height: 2rem;
-          width: 2rem;
+          @include size(2rem);
           top: 55%;
           display:flex;
           align-items:center;
@@ -109,28 +108,22 @@
         max-width: 100%;
       
         &__header {
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
+          @include text-style;
           flex: 1;
         }
       
         &__title {
-          margin: 0;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
+          @include text-style;
         }
       
         &__description {
-          margin: 0;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
+          margin-top: 4px;
+          @include text-style;
         }
       
         &__price {
           font-weight: bold;
+          font-family: sans-serif;
           display: flex;
           justify-content: flex-end;
           align-items: flex-end;
@@ -152,8 +145,7 @@
         }
       
         &__wrapIcon {
-          height: 1.6rem;
-          width: 1.6rem;
+          @include size(1.6rem);
           background-color: #fff;
           display:flex;
           align-items:center;
@@ -192,7 +184,7 @@
 
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
  
   header{
     display: flex;
@@ -203,8 +195,6 @@
     .fa-arrow-left{    
       position: absolute;
       left:0.5rem;
-      height: 2rem;
-      width: 2rem;
       top: 50%;
       display:flex;
       align-items:center;
@@ -309,14 +299,13 @@
     }
   
     &__title {
-      margin: 0;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
     }
   
     &__description {
-      margin: 0;
+      margin-top: 4px;
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
@@ -345,8 +334,6 @@
     }
   
     &__wrapIcon {
-      height: 1.6rem;
-      width: 1.6rem;
       background-color: #fff;
       display:flex;
       align-items:center;

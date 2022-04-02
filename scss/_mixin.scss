@@ -21,3 +21,16 @@
       color: inherit;
     }
   }
+
+  @mixin size($dimention) {
+    width: $dimention;
+    height: $dimention;
+  }
+
+  @mixin text-style {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+ 
