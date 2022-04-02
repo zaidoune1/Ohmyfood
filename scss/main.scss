@@ -23,7 +23,7 @@
 
         text-align: center;
         padding-top: 35px;
-        font-size: 34px;
+        font-size: 30px;
         font-weight: 700;
     }
 
@@ -31,7 +31,7 @@
         
         text-align: center;
         padding-top: 20px;
-        font-size: 23px;
+        font-size: 20px;
         font-weight: normal;
         color: rgba(0, 0, 0, 0.897);
     }
@@ -39,7 +39,7 @@
 
     a{
         @include button;
-        padding: 1.68rem 3.3rem;
+        padding: 1.66rem 3.1rem;
         @extend %main-flex;
         margin-top: 40px;
      }
@@ -213,6 +213,13 @@ nav{
 
 
 @media (min-width: 992px) {
+
+    .block-header{
+        p{
+            font-size: 23px;
+        }
+        
+    }
     
     nav{
         display: flex;

@@ -309,13 +309,13 @@ footer .block-footer ul li a {
   .block-header h1 {
     text-align: center;
     padding-top: 35px;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 700;
   }
   .block-header p {
     text-align: center;
     padding-top: 20px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: normal;
     color: rgba(0, 0, 0, 0.897);
   }
@@ -335,7 +335,7 @@ footer .block-footer ul li a {
             transition-duration: 0.25s;
     -webkit-box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
             box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-    padding: 1.68rem 3.3rem;
+    padding: 1.66rem 3.1rem;
     margin-top: 40px;
   }
   .block-header a:hover {
@@ -496,6 +496,9 @@ footer .block-footer ul li a {
 }
 
 @media (min-width: 992px) {
+  .block-header p {
+    font-size: 23px;
+  }
   nav {
     display: -webkit-box;
     display: -ms-flexbox;
