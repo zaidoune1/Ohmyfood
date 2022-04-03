@@ -827,4 +827,13 @@ footer .block-footer ul li a {
     font-weight: 600;
   }
 }
+
+@media screen and (min-width: 700px) and (max-width: 992px) {
+  footer {
+    text-align: center;
+  }
+  footer .block-footer {
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=Lapalette.css.map */

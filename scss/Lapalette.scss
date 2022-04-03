@@ -413,3 +413,13 @@
   
   }
 }
+
+@media screen and (min-width: 700px) and (max-width:992px) {
+  footer{
+    text-align: center;
+
+    .block-footer{
+      margin-left: 0;
+    }
+  }
+}
