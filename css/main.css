@@ -810,12 +810,8 @@ footer .block-footer ul li a {
   }
   .restaurants .resto {
     margin-top: 20px;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
   }
   .restaurants .resto:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
     cursor: pointer;
   }
   .restaurants .resto .img-nouveau {
